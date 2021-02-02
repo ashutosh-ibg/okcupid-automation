@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.by import By
-
+import os
 import cv2
 import matplotlib.pyplot as pl
 from deepface import DeepFace
@@ -10,7 +10,11 @@ from deepface import DeepFace
 import time
 print('\t*************** Created by Ashutosh Kumar ****************************')
 print('\t***************\tashutosh_ibg\t***************************')
+print("Please change your Directory.If you already chaneged the directory .please ignore  ")
 phone=int(input('Enter Your Mobile Number: '))
+
+folder="E:\\project\\tinder\\images\\"
+
 s=['Man','Women']
 gender=int(input('Select Your Gender\n 1. Male \n 2. Women\n'))
 if gender == 1:
@@ -73,17 +77,19 @@ try:
                     time.sleep (5)
                     site.switch_to.window (site.window_handles[1])
                     time.sleep (3)
-                    site.get_screenshot_as_file ("E:\\project\\tinder\\images\\" + str (i) + ".png")
+                    site.get_screenshot_as_file (folder+ str (i) + ".png")
                     time.sleep (5)
                     site.execute_script ("window.close();")
                     site.switch_to.window (site.window_handles[0])
 
                     try:
-                        img = cv2.imread ("E:\\project\\tinder\\images\\" + str (i) + ".png")
+                        img = cv2.imread (folder+ str (i) + ".png")
                         pl.imshow (img[:, :, ::-1])
                         result = DeepFace.analyze (img, actions=['gender'])
                         print (result)
                         cpic.append (result['gender'])
+                        os.remove (folder + str (i) + ".png")
+
                     except:
                         cpic.append ('Not')
                         pass
@@ -182,17 +188,19 @@ except :
                     time.sleep (5)
                     site.switch_to.window(site.window_handles[1])
                     time.sleep(3)
-                    site.get_screenshot_as_file("E:\\project\\tinder\\images\\"+str(i)+".png")
+                    site.get_screenshot_as_file(folder+str(i)+".png")
                     time.sleep(5)
                     site.execute_script ("window.close();")
                     site.switch_to.window (site.window_handles[0])
 
                     try:
-                        img = cv2.imread ("E:\\project\\tinder\\images\\"+str(i)+".png")
+                        img = cv2.imread (folder+str(i)+".png")
                         pl.imshow (img[:, :, ::-1])
                         result = DeepFace.analyze (img, actions=['gender'])
                         print (result)
                         cpic.append(result['gender'])
+                        os.remove(folder+str(i)+".png")
+
                     except:
                         cpic.append ('Not')
                         pass
