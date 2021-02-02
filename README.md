@@ -15,7 +15,7 @@
 
 	
 I hope you like this tool.</br>
-If you want to support us. You can donate through Google Pay.</br>
+###If you want to support us. You can donate through Google Pay.</br>
 #### UPI - officialindianblackgold@okicici</br>
 
 ### We will redirect your donation to Bajrang Dal</br>
@@ -23,7 +23,7 @@ If you want to support us. You can donate through Google Pay.</br>
 ### Thanking You </br>
 #### Ashutosh Kumar	</br>	
 ##### 💻Full Stack Developer👨💻</br>
-#### 🔐SeCuRity BuG ReseArcher 🕴️</br>
+##### 🔐SeCuRity BuG ReseArcher 🕴️</br>
 
 Linkedin- in/ashutosh_ibg</br>
 Instagram- ashutosh_ibg</br>
