@@ -15,7 +15,7 @@
 
 	
 I hope you like this tool.</br>
-if you want to support us financially. You can donate through GooglePay.</br>
+If you want to support us.You can donate through GooglePay.</br>
 ### We will redirect your donation to Bajrang Dal</br>
 #### UPI - officialindianblackgold@okicici</br>
 
