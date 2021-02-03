@@ -14,11 +14,6 @@
 
 
 	
-I hope you like this tool.</br>
-### If you want to support us. You can donate through Google Pay.</br>
-#### UPI - officialindianblackgold@okicici</br>
-
-
 ### Thanking You </br>
 #### Ashutosh Kumar	</br>	
 ##### 💻Full Stack Developer👨💻</br>
